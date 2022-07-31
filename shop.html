@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title><%- title %></title>
+  <title>眼鏡官網-門市據點</title>
   <link rel="stylesheet" href="./assets/style/all.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css">
 </head>
@@ -13,12 +13,9 @@
 <body>
   <header>
     <div class="container flex">
-      <% if(title==="眼鏡官網-首頁") { -%>
-        <h1><a href="./index.html"><img class="logo" src="./assets/images/logo-white.png" alt="logo of 眼鏡官網"></a></h1>
-      <% } else { %>
+      
         <a href="./index.html"><img class="logo" src="./assets/images/logo-white.png" alt="logo of 眼鏡官網"></a>
-      <% } -%>
-      <nav class="top-nav flex">
+            <nav class="top-nav flex">
         <a class="top-nav-menu-item text-white" href="./product.html">系列鏡框</a>
         <a class="top-nav-menu-item text-white" href="./branches.html">門市據點</a>
         <a class="top-nav-menu-item text-white" href="./blog.html">部落格</a>
@@ -34,7 +31,47 @@
     </nav>
   </header>
   <main>
-    <%- contents %>
+    
+<section class="single-branch">
+    <div class="container">
+        <h1 class="site-title">門市據點</h1>
+        <div class="branches-select-wrapper flex">
+            <label for="branches-selector" class="branches-select-label">選擇分店</label>
+            <select name="branches-selector" id="" class="branch-select">
+                <option value="">台北中山旗艦店</option>
+                <option value="">台北綠園店</option>
+                <option value="">台中清水旗艦店</option>
+                <option value="">高雄中正形象店</option>
+                <option value="">高雄夢時代店</option>
+            </select>
+        </div>
+        <div class="single branch-wrapper flex">
+            <div class="single branches-card flex">
+                <img src="./assets/images/store-1.png" alt="" class="single branch-image">
+                <div class="single branch-info flex">
+                    <h2 class="branch-name">台北中山旗艦店</h2>
+                    <ul class="single branch-info-wrapper">
+                        <li class="branch-info-item flex">
+                            <span class="mdi mdi-phone-outline info-icon"></span>
+                            <p class="info-text">電話：(02)000-1234</p>
+                        </li>
+                        <li class="branch-info-item flex">
+                            <span class="mdi mdi-clock-outline info-icon"></span>
+                            <p class="info-text">營業時間：10:00-21:00</p>
+                        </li>
+                        <li class="branch-info-item flex">
+                            <span class="mdi mdi-map-marker-outline info-icon"></span>
+                            <p class="info-text">地址：台北市中山區南京東路25巷2-1號</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="branch-map-wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.463755280864!2d121.53568141476366!3d25.05226618396379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abdf92494d29%3A0xd908a8a881f73476!2zMTA0OTHlj7DljJfluILkuK3lsbHljYDljZfkuqzmnbHot6_kuInmrrUyNeiZnw!5e0!3m2!1szh-TW!2stw!4v1659020464724!5m2!1szh-TW!2stw" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
   </main>
   <footer>
     <div class="container text-white">

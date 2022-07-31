@@ -1,10 +1,37 @@
----
-title: 眼鏡官網-部落格文章
-layout: ./app/layout.ejs
-engine: ejs
-current: article
----
-<div class="category-nav">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>眼鏡官網-部落格文章</title>
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="container flex">
+      
+        <a href="./index.html"><img class="logo" src="./assets/images/logo-white.png" alt="logo of 眼鏡官網"></a>
+            <nav class="top-nav flex">
+        <a class="top-nav-menu-item text-white" href="./product.html">系列鏡框</a>
+        <a class="top-nav-menu-item text-white" href="./branches.html">門市據點</a>
+        <a class="top-nav-menu-item text-white" href="./blog.html">部落格</a>
+        <a class="top-nav-menu-item text-white" href="./FAQ.html">常見問題</a>
+      </nav>
+      <span class="mdi mdi-menu"></span>
+    </div>
+    <nav class="top-nav-sm flex">
+      <a class="top-nav-menu-item text-white" href="./product.html">系列鏡框</a>
+      <a class="top-nav-menu-item text-white" href="./branches.html">門市據點</a>
+      <a class="top-nav-menu-item text-white" href="./blog.html">部落格</a>
+      <a class="top-nav-menu-item text-white" href="./FAQ.html">常見問題</a>
+    </nav>
+  </header>
+  <main>
+    <div class="category-nav">
   <div class="container flex">
     <nav class="category-nav-list flex">
       <a href="#" class="category-nav-item">最新消息</a>
@@ -88,3 +115,46 @@ current: article
     </div>
   </div>
 </section>
+  </main>
+  <footer>
+    <div class="container text-white">
+      <div class="footer-content-wrapper flex">
+        <div class="footer-part-left">
+          <nav class="bot-nav flex">
+            <a class="bot-nav-menu-item" href="./index.html">首頁</a>
+            <a class="bot-nav-menu-item" href="./product.html">系列鏡框</a>
+            <a class="bot-nav-menu-item" href="./branches.html">門市據點</a>
+            <a class="bot-nav-menu-item" href="./blog.html">部落格</a>
+            <a class="bot-nav-menu-item" href="./FAQ.html">常見問題</a>
+          </nav>
+          <ul class="contact-info-list">
+            <li class="contact-info-item flex">
+              <span class="mdi mdi-phone-outline text-white"></span>
+              <a class="info-item" href="tel:+800-000-000">0800-000-000</a>
+            </li>
+            <li class="contact-info-item flex">
+              <span class="mdi mdi-email-outline text-white"></span>
+              <a class="info-item" href="mailto:glasses@business.com">glasses@business.com</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="social-link-list flex">
+          <li><a href="#"><img src="./assets/images/ic_social_fb.png" alt="icon of facebook for link to our official page" class="social-logo"></a></li>
+          <li><a href="#"><img src="./assets/images/ic_social_ig.png" alt="icon of instagram for link to our official page" class="social-logo"></a></li>
+          <li><a href="#"><img src="./assets/images/ic_social_line.png" alt="icon of instagram for link to our official line account" class="social-logo"></a></li>
+        </ul>
+      </div>
+      <div class="statement-wrapper flex">
+        <p class="copyright-text">Copyright © 2020 Glasses.All rights reserved.</p>
+        <div class="statement-related-link-list flex">
+          <a class="statement-item" href="#">隱私權政策</a>
+          <a class="statement-item" href="#">服務條款</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
