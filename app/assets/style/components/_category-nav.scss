@@ -1,0 +1,47 @@
+// font CSS
+
+.category-nav-item{
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+// category nav CSS
+
+.category-nav{
+    background-color: #650300;
+}
+
+.category-nav{
+    .flex{
+        align-items: center;
+    }
+}
+
+.category-nav-list{
+    width: 37.3%;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    @include tablet{
+        width: 69.5%;
+    }
+    @include mobile{
+        width: 100%;
+    }
+}
+
+.category-nav-item{
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+    @include mobile{
+        font-size: 16px;
+    }
+}
+
+.mdi.mdi-magnify{
+    font-size: 29px;
+    color: #FFFFFF;
+    cursor: pointer;
+    @include mobile{
+        display: none;
+    }
+}

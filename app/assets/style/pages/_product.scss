@@ -1,0 +1,240 @@
+// font CSS
+
+.product-category-item-name, .product-title,.product-info, .product-pagination{
+    font-family: Roboto, sans-serif;
+}
+
+// product category CSS
+
+.product-category{
+    .container{
+        @include tablet{
+            max-width: 100vw;
+        }
+    }
+}
+
+.product-category-list.container{
+    padding: 0;
+}
+
+.product-category-item{
+    width: 33.3%;
+    border: 1px solid #DCDCDC;
+    cursor: pointer;
+    @include tablet {
+        width: 48.2%;
+    }
+    @include mobile{
+        width: 33.3%;
+    }
+}
+
+.product-category-item-name{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    @include mobile{
+        font-size: 16px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+}
+
+.current-item{
+    position: relative;
+    &::after{
+        content:"";
+        position: absolute;
+        display: block;
+        bottom: 0px;
+        width: 100%;
+        border-bottom: 8px solid #AA0601;
+    }
+}
+
+// product banner CSS
+
+
+
+.product-content-banner{
+    margin-bottom: 80px;
+    @include mobile{
+        margin-bottom: 40px;
+    }
+}
+
+.product-content-banner-image{
+    width: 50%;
+    height: 296px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &.image-1{
+        background-image: url("../images/product-header-1.png");
+    }
+    &.image-2{
+        background-image: url("../images/product-header-2.png");
+    }
+    &.image-3{
+        background-image: url("../images/product-header-3.png");
+    }
+    &.image-4{
+        background-image: url("../images/product-header-4.png");
+    }
+    @include tablet {
+        &.image-1{
+            background-image: url("../images/product-header-sm-1.png");
+        }
+        &.image-2{
+            background-image: url("../images/product-header-sm-2.png");
+        }
+        &.image-3{
+            background-image: url("../images/product-header-sm-3.png");
+        }
+        &.image-4{
+            background-image: url("../images/product-header-sm-4.png");
+        }
+    }
+    @include mobile{
+        background-size: contain;
+        height: 136px;
+    }
+}
+
+// product content CSS
+
+.product-content{
+    padding: 0;
+}
+
+.product-content{
+    .optical, .sunglasses{
+        display: none;
+        &.active{
+            display: block;
+        }
+    }
+}
+
+.product-title{
+    text-align: center;
+    font-size: 42px;
+    font-weight: 500;
+    @include mobile{
+        font-size: 24px;
+    }
+}
+
+.product-subtitle{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+    @include mobile{
+        font-size: 24px;
+    }
+}
+
+.product-list{
+    row-gap: 80px;
+    column-gap: 24px;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+    @include tablet {
+        row-gap: 40px;
+    }
+    @include mobile{
+        row-gap: 24px;
+    }
+}
+
+.optical{
+    .product-item{
+        width: 23.6%;
+        @include tablet{
+            width: 48.2%;
+        }
+        @include mobile{
+            width: 100%;
+        }
+    }
+}
+
+.sunglasses{
+    .product-item{
+        width: 32%;
+        @include tablet{
+            width: 48.2%;
+        }
+        @include mobile{
+            width: 100%;
+        }
+    }
+    
+}
+
+.product-item-image{
+    width: 100%;
+}
+
+.product-info{
+    font-size: 24px;
+    &.price{
+        font-weight: 500;
+    }
+}
+
+.product-color-wrapper{
+    justify-content: flex-start;
+}
+
+.product-color{
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    &.brown{
+        background-color: #5f3e2d;
+        margin-right: 8px;
+    }
+    &.coffee{
+        background-color: #b75929;
+    }
+}
+
+// pagination CSS
+
+.product-pagination{
+    margin-bottom: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-pagination-prev, .product-pagination-next, .product-pagination-pages{
+    border: 1px solid #555555;
+    cursor: pointer;
+    height: 48px;
+    line-height: 48px;
+    &:hover{
+        background-color: #F2F2F2;
+        color:#555
+    }
+}
+
+.product-pagination-prev, .product-pagination-next{
+    font-size: 19px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.product-pagination-pages{
+    font-size: 18px;
+    padding-left: 16px;
+    padding-right: 16px;
+    &.current{
+        background-color: #000;
+        color: #FFF;
+    }
+}
+

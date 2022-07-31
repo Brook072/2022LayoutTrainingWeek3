@@ -1,0 +1,79 @@
+// font CSS
+
+.top-nav-menu-item{
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+
+// header CSS
+
+
+header{
+    background-color: #AA0601;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    .container{
+        align-items: center;
+    }
+}
+
+.logo{
+    width: 80px;
+    height: 72px;
+    object-fit: contain;
+}
+
+.top-nav{
+    width: 38%;
+    align-items: center;
+    @include tablet{
+        width: 70.6%;
+    }
+    @include mobile{
+        display: none;
+    }
+}
+
+.mdi.mdi-menu, .mdi.mdi-close{
+    color: #FFFFFF;
+    display: none;
+    font-size: 40px;
+    @include mobile{
+        display: block;
+    }
+}
+
+.top-nav-sm{
+    background-color: #AA0601;
+    display: none;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: -4px;
+    &.active{
+        display: flex;
+    }
+}
+
+.top-nav-menu-item{
+    font-size: 20px;
+    &:hover{
+        text-shadow: 3px 3px #000000;
+        transform: scale(1.1);
+    }
+    @include mobile{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        font-size: 16px;
+        text-align: center;
+        width: 50%;
+        border: 1px solid #FFFFFF;
+        &:hover{
+            transform: none;
+        }
+        &:nth-child(odd){
+            border-left: 0;
+        }&:nth-child(even){
+            border-right: 0;
+        }
+    }
+}
