@@ -83,6 +83,9 @@ html {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
+body {
+  font-family: Roboto, "Noto Sans TC", sans-serif; }
+
 section {
   padding-top: 80px;
   padding-bottom: 80px; }
@@ -115,9 +118,6 @@ h2 {
       margin: 0;
       padding-left: 12px;
       padding-right: 12px; } }
-
-.pagination {
-  font-family: Roboto, sans-serif; }
 
 .pagination {
   margin-bottom: 80px;
@@ -157,16 +157,12 @@ h2 {
   .pagination-prev, .pagination-pages, .pagination-next {
     font-size: 16px; } }
 
-.category-nav-item {
-  font-family: "Noto Sans TC", sans-serif; }
-
 .category-nav {
   background-color: #650300; }
-
-.category-nav .flex {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  .category-nav .flex {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
 
 .category-nav-list {
   width: 37.3%;
@@ -278,9 +274,6 @@ h2 {
 .info-text {
   font-size: 20px; }
 
-.top-nav-menu-item {
-  font-family: "Noto Sans TC", sans-serif; }
-
 header {
   background-color: #AA0601;
   padding-top: 4px;
@@ -351,12 +344,6 @@ header {
         border-left: 0; }
       .top-nav-menu-item:nth-child(even) {
         border-right: 0; } }
-
-.statement-item, .bot-nav-menu-item {
-  font-family: "Noto Sans TC", sans-serif; }
-
-.copyright-text {
-  font-family: "Roboto", sans-serif; }
 
 footer {
   background-color: #AA0601;
@@ -488,12 +475,6 @@ footer {
         -ms-transform: scale(1.1);
             transform: scale(1.1); }
 
-h2, label, .product-series, .slogan, .button, .item-title, .item-text, .customer-recommend-info, .contact-us-description {
-  font-family: "Noto Sans TC", sans-serif; }
-
-.iconic-frame-name, .co-brand-design-frame-name {
-  font-family: "Roboto", sans-serif; }
-
 .banner {
   background-image: url("../images/home-header.png");
   background-size: cover;
@@ -555,11 +536,7 @@ h2, label, .product-series, .slogan, .button, .item-title, .item-text, .customer
           flex-wrap: wrap; } }
 
 .list-item {
-  width: 23.3%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+  width: 23.3%; }
   @media screen and (max-width: 992px) {
     .list-item {
       width: 48.2%; } }
@@ -568,12 +545,14 @@ h2, label, .product-series, .slogan, .button, .item-title, .item-text, .customer
       width: 100%; } }
 
 .feature-icon {
+  display: block;
   width: 100px;
   height: 100px;
   -o-object-fit: contain;
      object-fit: contain;
   margin: 0 auto;
-  margin-bottom: 16px; }
+  margin-bottom: 16px;
+  text-align: center; }
 
 .item-title {
   font-size: 24px;
@@ -756,9 +735,6 @@ h2, label, .product-series, .slogan, .button, .item-title, .item-text, .customer
   margin: 0 auto;
   padding-top: 16px;
   padding-bottom: 16px; }
-
-.product-category-item-name, .product-title, .product-info, .product-pagination {
-  font-family: Roboto, sans-serif; }
 
 @media screen and (max-width: 992px) {
   .product-category .container {
@@ -945,9 +921,6 @@ h2, label, .product-series, .slogan, .button, .item-title, .item-text, .customer
     background-color: #000;
     color: #FFF; }
 
-.branches-area-select-label, .branch-name, .info-text, .branch-detail-button {
-  font-family: "Noto Sans TC", sans-serif; }
-
 @media screen and (max-width: 767px) {
   .branches {
     margin-bottom: 24px; } }
@@ -1010,9 +983,9 @@ h2, label, .product-series, .slogan, .button, .item-title, .item-text, .customer
   padding-top: 16px;
   padding-bottom: 16px;
   width: 100%; }
-
-.branches-title, .branches-area-select-label, .branch-name, .info-text, .branch-detail-button {
-  font-family: "Noto Sans TC", sans-serif; }
+  .branch-detail-button:hover {
+    background-color: #555555;
+    color: #000000; }
 
 .branches-title {
   font-size: 48px;
@@ -1101,11 +1074,9 @@ h2, label, .product-series, .slogan, .button, .item-title, .item-text, .customer
     .branch-map-wrapper {
       width: 100%; } }
 
-.article-title, .article-content {
-  font-family: "Noto Sans TC", sans-serif; }
-
-.article-eng-title, .article-date, .more-text {
-  font-family: "Roboto", sans-serif; }
+@media screen and (max-width: 767px) {
+  .category-nav {
+    display: none; } }
 
 .blog-article {
   margin-bottom: 64px; }
@@ -1213,12 +1184,6 @@ h2, label, .product-series, .slogan, .button, .item-title, .item-text, .customer
   @media screen and (max-width: 992px) {
     .more-text {
       display: none; } }
-
-.blog-menu-link, .blog-menu-slash, .article-title, .part-text, .page-switch-title {
-  font-family: "Noto Sans TC", sans-serif; }
-
-.article-tag, .article-eng-title, .share-link {
-  font-family: "Roboto", sans-serif; }
 
 .article {
   padding-top: 24px; }
@@ -1371,9 +1336,6 @@ h2, label, .product-series, .slogan, .button, .item-title, .item-text, .customer
 .mdi.mdi-arrow-left, .mdi.mdi-arrow-right, .page-switch-title {
   font-size: 16px; }
 
-.FAQ-description, .common-FAQ-title, .common-FAQ-text {
-  font-family: "Noto Sans TC", sans-serif; }
-
 @media screen and (max-width: 767px) {
   .common-FAQ {
     margin-bottom: 24px; } }
@@ -1382,12 +1344,6 @@ h2, label, .product-series, .slogan, .button, .item-title, .item-text, .customer
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 24px; }
-
-.common-FAQ-list {
-  width: 66%; }
-  @media screen and (max-width: 992px) {
-    .common-FAQ-list {
-      width: 100%; } }
 
 .common-FAQ-item {
   margin-bottom: 32px; }
